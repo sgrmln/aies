@@ -1,0 +1,102 @@
+
+"""
+
+variant3 = f"""<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bevor die KI loslegt ...</title>
+<style>
+{base_css}
+.card{{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+}}
+.visual{{
+  min-height:560px;
+  background:linear-gradient(145deg,#e3ebff,#ffffff);
+  display:grid;
+  place-items:center;
+  padding:44px;
+}}
+.suitcase{{
+  width:min(340px,100%);
+  border-radius:36px;
+  background:white;
+  border:1px solid var(--border);
+  padding:34px;
+  text-align:center;
+  box-shadow:0 20px 50px rgba(23,32,51,.10);
+}}
+.suitcase .emoji{{
+  font-size:92px;
+  margin-bottom:16px;
+}}
+.suitcase strong{{
+  display:block;
+  font-size:25px;
+  line-height:1.15;
+  letter-spacing:-.03em;
+}}
+.content{{
+  padding:58px;
+}}
+.rules{{
+  display:grid;
+  gap:14px;
+  margin-top:30px;
+}}
+.rule{{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  background:#f8faff;
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:16px 18px;
+  font-weight:800;
+}}
+.claim{{
+  margin-top:28px;
+  font-size:24px;
+  font-weight:900;
+  color:var(--text);
+}}
+@media(max-width:860px){{
+  .card{{grid-template-columns:1fr}}
+  .visual{{min-height:280px;order:2}}
+}}
+</style>
+</head>
+<body>
+<main class="card">
+  <aside class="visual">
+    <div class="suitcase">
+      <div class="emoji">🧳</div>
+      <strong>Nur Sicheres mitnehmen</strong>
+      <p>Ideen ja. Sensible Daten nein.</p>
+    </div>
+  </aside>
+
+  <section class="content">
+    <div class="badge">🌍 Externe KI-Seite</div>
+    <h1>Bevor die KI loslegt ...</h1>
+    <p class="lead">Bitte nehmen Sie sensible Informationen nicht mit auf die Reise.</p>
+
+    <div class="rules">
+      <div class="rule">🔒 Vertrauliche Informationen bleiben intern</div>
+      <div class="rule">👤 Personenbezogene Daten nicht eingeben</div>
+      <div class="rule">📄 Interne Dokumente nicht hochladen</div>
+    </div>
+
+    <p class="claim">Gute Reise – und viel Erfolg mit KI.</p>
+
+    <div class="actions">
+      <a class="btn primary" href="#">KI-Hub</a>
+      <a class="btn secondary" href="#">Weiter zum Tool</a>
+    </div>
+  </section>
+</main>
+</body>
+</html>
