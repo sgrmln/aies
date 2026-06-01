@@ -54,6 +54,15 @@ h1 {
   flex-wrap: wrap;
 }
 
+.info {
+    margin: 24px 0 32px;
+    padding: 16px 20px;
+    background: #eef4ff;
+    border-radius: 12px;
+    color: #315efb;
+    font-weight: 600;
+}
+
 .btn {
   min-width: 220px;
   min-height: 60px;
