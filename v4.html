@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schön, dass Sie KI nutzen.</title>
+<style>
+{base_css}
+.card{{
+  max-width:920px;
+  padding:58px;
+}}
+.header{{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:28px;
+}}
+.logo{{
+  font-size:22px;
+  font-weight:950;
+  color:var(--accent);
+}}
+.visual{{
+  width:150px;
+  height:150px;
+  border-radius:34px;
+  background:linear-gradient(145deg,#e3ebff,#ffffff);
+  border:1px solid var(--border);
+  display:grid;
+  place-items:center;
+  font-size:70px;
+  flex:0 0 auto;
+}}
+.rules{{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:34px;
+}}
+.rule{{
+  background:#f8faff;
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:22px;
+}}
+.rule strong{{
+  display:block;
+  font-size:18px;
+  margin-bottom:8px;
+}}
+.rule p{{
+  font-size:15px;
+}}
+.note{{
+  margin-top:30px;
+  padding:20px;
+  background:var(--accent-soft);
+  border-radius:20px;
+  color:var(--text);
+  font-weight:700;
+}}
+@media(max-width:800px){{
+  .header{{display:block}}
+  .visual{{margin:28px 0 0}}
+  .rules{{grid-template-columns:1fr}}
+}}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="header">
+    <section>
+      <div class="logo">🤝 BMEIAxAI</div>
+      <div class="badge" style="margin-top:24px;">Externe KI-Seite</div>
+      <h1>Schön, dass Sie KI nutzen.</h1>
+      <p class="lead">KI kann helfen, schneller zu arbeiten, Ideen zu entwickeln und Wissen zugänglich zu machen.</p>
+    </section>
+    <div class="visual">✨</div>
+  </div>
+
+  <div class="rules">
+    <article class="rule">
+      <strong>🔒 Vertraulich bleibt intern</strong>
+      <p>Keine vertraulichen Inhalte in externe KI-Tools eingeben.</p>
+    </article>
+    <article class="rule">
+      <strong>👤 Daten schützen</strong>
+      <p>Keine personenbezogenen Daten teilen oder hochladen.</p>
+    </article>
+    <article class="rule">
+      <strong>🧠 Mensch prüft KI</strong>
+      <p>Ergebnisse immer fachlich prüfen und einordnen.</p>
+    </article>
+  </div>
+
+  <p class="note">Mehr Informationen, Tipps und freigegebene Tools finden Sie im KI-Hub.</p>
+
+  <div class="actions">
+    <a class="btn primary" href="#">Zum KI-Hub</a>
+    <a class="btn secondary" href="#">Weiter zum KI-Tool</a>
+  </div>
+</main>
+</body>
+</html>
