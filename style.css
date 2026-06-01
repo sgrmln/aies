@@ -65,27 +65,15 @@ h1 {
 }
 
 .rules {
-    display: flex;
-    flex-direction: column;
-
-    gap: 14px;
-
-    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    text-align: left;
 }
 
 .rule {
-    background: #fafcff;
-
-    border: 1px solid var(--border);
-
-    border-radius: 14px;
-
-    padding: 16px 20px;
-
-    text-align: left;
-
-    font-size: 1.05rem;
-    line-height: 1.5;
+    font-size: 1.15rem;
+    line-height: 2.0;
+    margin-bottom: 4px;
 }
 
 .info {
