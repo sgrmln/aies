@@ -1,0 +1,108 @@
+"""
+
+variant2 = f"""<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KI kann viel. Sie auch.</title>
+<style>
+{base_css}
+.card{{
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+}}
+.content{{
+  padding:58px;
+}}
+.visual{{
+  min-height:520px;
+  background:linear-gradient(145deg,#dfe8ff,#fbfcff);
+  display:grid;
+  place-items:center;
+  padding:42px;
+}}
+.visual-card{{
+  width:100%;
+  max-width:360px;
+  aspect-ratio:1;
+  border-radius:38px;
+  background:white;
+  border:1px solid var(--border);
+  display:grid;
+  place-items:center;
+  text-align:center;
+  padding:32px;
+  box-shadow:0 20px 50px rgba(23,32,51,.10);
+}}
+.visual-card .emoji{{
+  font-size:88px;
+  margin-bottom:18px;
+}}
+.visual-card strong{{
+  display:block;
+  font-size:25px;
+  line-height:1.15;
+  letter-spacing:-.03em;
+}}
+.grid{{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-top:30px;
+}}
+.box{{
+  background:#f8faff;
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:18px;
+  font-weight:750;
+}}
+.claim{{
+  margin-top:28px;
+  font-size:25px;
+  line-height:1.2;
+  font-weight:900;
+  letter-spacing:-.03em;
+}}
+@media(max-width:860px){{
+  .card{{grid-template-columns:1fr}}
+  .visual{{min-height:300px}}
+  .grid{{grid-template-columns:1fr}}
+}}
+</style>
+</head>
+<body>
+<main class="card">
+  <section class="content">
+    <div class="badge">BMEIAxAI</div>
+    <h1>KI kann viel. Sie auch.</h1>
+    <p class="lead">Nutzen Sie KI für Ideen, Struktur, Formulierungen und Inspiration.</p>
+
+    <div class="grid">
+      <div class="box">✨ Ideen</div>
+      <div class="box">✨ Struktur</div>
+      <div class="box">✨ Formulierungen</div>
+      <div class="box">✨ Inspiration</div>
+    </div>
+
+    <p class="claim">Neugierig bleiben. Sorgfältig handeln.</p>
+
+    <div class="actions">
+      <a class="btn primary" href="#">Mehr im KI-Hub</a>
+      <a class="btn secondary" href="#">Weiter</a>
+    </div>
+  </section>
+
+  <aside class="visual">
+    <div class="visual-card">
+      <div>
+        <div class="emoji">🤝</div>
+        <strong>KI als Sparringpartner</strong>
+        <p>Bitte ohne sensible Informationen.</p>
+      </div>
+    </div>
+  </aside>
+</main>
+</body>
+</html>
