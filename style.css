@@ -1,3 +1,4 @@
+```css
 :root {
     --primary: #315efb;
     --primary-light: #eef4ff;
@@ -36,44 +37,49 @@ body {
 
     padding: 42px;
 
-    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 18px 50px rgba(0,0,0,0.08);
 
     text-align: center;
 }
 
 .logo {
-    font-size: 1.1rem;
-    font-weight: 800;
+    margin-bottom: 20px;
+}
 
-    color: var(--primary);
-
-    margin-bottom: 18px;
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 h1 {
     font-size: 2.4rem;
     line-height: 1.1;
 
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 .note {
     font-size: 1.15rem;
     color: var(--muted);
 
-    margin-bottom: 24px;
+    margin-bottom: 28px;
 }
 
 .rules {
-    max-width: 600px;
-    margin: 0 auto 30px auto;
+    max-width: 620px;
+
+    margin: 0 auto 32px auto;
+
     text-align: left;
 }
 
 .rule {
     font-size: 1.15rem;
-    line-height: 2.0;
-    margin-bottom: 4px;
+    line-height: 2;
+
+    margin-bottom: 6px;
 }
 
 .info {
@@ -88,13 +94,13 @@ h1 {
     margin-bottom: 32px;
 
     font-weight: 600;
+
+    line-height: 1.5;
 }
 
 .buttons {
     display: flex;
-
     justify-content: center;
-
     gap: 16px;
 
     flex-wrap: wrap;
@@ -141,21 +147,14 @@ h1 {
     background: #f8faff;
 }
 
-.logo {
-    margin-bottom: 18px;
-}
-
-.logo img {
-    height: 48px;
-    width: auto;
-    display: block;
-    margin: 0 auto;
-}
-
 @media (max-width: 700px) {
 
     .box {
         padding: 32px 24px;
+    }
+
+    .logo img {
+        height: 48px;
     }
 
     h1 {
